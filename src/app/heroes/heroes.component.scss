@@ -1,0 +1,106 @@
+/* HeroesComponent's private CSS styles */
+.heroes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 20em;
+}
+
+.heroes li {
+  display: flex;
+}
+
+.heroes button {
+  flex: 1;
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.heroes button:hover {
+  color: #2c3a41;
+  background-color: #e6e6e6;
+  left: .1em;
+}
+
+.heroes button:active {
+  background-color: rgba(167, 172, 185, 0.42);
+  color: #fafafa;
+}
+
+.heroes button.selected {
+  background-color: rgba(0, 0, 0, 0.47);
+  color: white;
+}
+
+.heroes button.selected:hover {
+  background-color: #505050;
+  color: white;
+}
+
+.heroes button.selected:active {
+  background-color: black;
+  color: white;
+}
+
+.heroes .badge {
+  display: flex;
+  font-size: large;
+  color: rgb(236, 229, 229);
+  background-color: rgb(19, 1, 1);
+  padding: 1em;
+  line-height: 1em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+
+.heroes .name {
+  font-size: large;
+  padding: 1em;
+}
+
+.selected-hero {
+  flex: 1;
+  display: inline-block;
+  margin: 0 0 2em 0;
+  background-color: #505050;
+  color: white;
+  padding: 0;
+  width: 20em;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.selected-hero h2 {
+  margin: 0;
+  color: white;
+  padding: 1em;
+  background-color: rgba(19, 1, 1, 0.82);
+}
+
+.selected-hero div {
+  padding: 1em;
+  color: white;
+}
+
+.selected-hero div {
+  input {
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 0.5em;
+    margin: 0.5em;
+  }
+}
+
+.selected-hero .description {
+  color: #ffffff;
+  font-size: large;
+  margin: 0.5em;
+  padding: 0.5em;
+  border: 1px dot-dot-dash white;
+}
