@@ -10,7 +10,7 @@
   display: flex;
 }
 
-.heroes button {
+.heroes a {
   flex: 1;
   cursor: pointer;
   position: relative;
@@ -20,30 +20,31 @@
   border-radius: 8px;
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 
-.heroes button:hover {
+.heroes a:hover {
   color: #2c3a41;
   background-color: #e6e6e6;
   left: .1em;
 }
 
-.heroes button:active {
+.heroes a:active {
   background-color: rgba(167, 172, 185, 0.42);
   color: #fafafa;
 }
 
-.heroes button.selected {
+.heroes a.selected {
   background-color: rgba(0, 0, 0, 0.47);
   color: white;
 }
 
-.heroes button.selected:hover {
+.heroes a.selected:hover {
   background-color: #505050;
   color: white;
 }
 
-.heroes button.selected:active {
+.heroes a.selected:active {
   background-color: black;
   color: white;
 }
